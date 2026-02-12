@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Panto
 
-## Getting Started
+A modern, responsive ecommerce website for premium furniture featuring chairs, beds, sofas, and lamps. Built with cutting-edge web technologies for optimal performance and user experience.
 
-First, run the development server:
+**Repository**: [https://github.com/RafikElRahmi/panto.git](https://github.com/RafikElRahmi/panto.git)
+
+## 🚀 Tech Stack
+
+- **Framework**: Next.js 16 with App Router
+- **Styling**: Tailwind CSS v4
+- **UI Components**: Radix UI (headless components)
+- **Component Variants**: Class Variance Authority (CVA)
+- **Language**: TypeScript
+- **Package Manager**: pnpm
+- **Font Optimization**: Next.js Font Loading
+- **Code Quality**: ESLint, Prettier
+
+## ✨ Features
+
+- **Modern Design**: Clean, geometric aesthetic with premium feel
+- **Responsive Layout**: Mobile-first design that works on all devices
+- **Performance Optimized**: Fast loading with Next.js optimizations
+- **SEO Ready**: Comprehensive metadata and social sharing
+- **Accessibility**: Built with Radix UI for screen reader support
+- **Type Safe**: Full TypeScript coverage
+- **Component System**: Reusable UI components with CVA variants
+
+## 🛠 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- pnpm
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone <repository-url>
+   cd panto
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   pnpm install
+   ```
+
+3. **Start development server**
+
+   ```bash
+   pnpm dev
+   ```
+
+4. **Open your browser**
+   ```
+   http://localhost:3000
+   ```
+
+### Build for Production
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm build
+pnpm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Design System
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Typography Scale
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Display**: Montserrat Bold (font-montserrat font-bold)
+- **Headings**: Montserrat SemiBold (font-montserrat font-semibold)
+- **Body**: DM Sans Regular (font-dm-sans font-normal)
+- **Accent**: Inter Regular (font-inter font-normal)
 
-## Learn More
+### Color Palette
 
-To learn more about Next.js, take a look at the following resources:
+- **Primary**: Custom brand colors
+- **Neutral**: Tailwind gray scale
+- **Semantic**: Success, warning, error states
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Component Architecture
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Base Components**: Radix UI primitives
+- **Styled Components**: Tailwind classes with CVA variants
+- **Layout Components**: Page sections and containers
+- **Feature Components**: Product cards, navigation, etc.
 
-## Deploy on Vercel
+## 🔧 Development Guidelines
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Code Style
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Use TypeScript for all new code
+- Follow ESLint and Prettier configurations
+- Use semantic HTML and ARIA attributes
+- Maintain component composition patterns
+
+## 📱 Browser Support
+
+- Chrome 90+
+- Firefox 88+
+- Safari 14+
+- Edge 90+
+
+## Technical Choices
+
+### Typography
+
+The Figma design uses **Gilroy**, which is a paid commercial font.
+Without access to the license, I opted for **Montserrat** as an alternative,
+as it has very similar geometric characteristics to Gilroy
+(geometric, modern, with comparable proportions).
+
+Alternative tested: Plus Jakarta Sans (also visually very close)

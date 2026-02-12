@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --background-gray: #eeeeee;
+  --background-light-gray: #f7f7f7;
+  --foreground: #1e1e1e;
+  --muted: #1e2833;
+
+  /* Global Theme Colors */
+  --primary-orange: #e58411;
+  --primary-cyan: #00d6c9;
+  --primary-gray: #7c7c7c;
+
+  /* Default theme (Orange) */
+  --primary: var(--primary-orange);
+}
+
+[data-theme="orange"] {
+  --primary: var(--primary-orange);
+}
+
+[data-theme="cyan"] {
+  --primary: var(--primary-cyan);
+}
+
+[data-theme="gray"] {
+  --primary: var(--primary-gray);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-gray: var(--background-gray);
+  --color-background-light-gray: var(--background-light-gray);
+  --color-muted: var(--muted);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-orange: var(--primary-orange);
+  --color-primary-cyan: var(--primary-cyan);
+  --color-primary-gray: var(--primary-gray);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-inter: var(--font-inter);
+  --font-dm-sans: var(--font-dm-sans);
+  --font-montserrat: var(--font-montserrat);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat);
+}
