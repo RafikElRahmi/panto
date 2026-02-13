@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { FeatureType } from './features';
+import MoreInfo from "@/components/shared/more-info";
 
 function Feature({ feature }: { feature: FeatureType }) {
   return (
@@ -11,19 +12,7 @@ function Feature({ feature }: { feature: FeatureType }) {
       <p className="text-foreground leading-paragraph font-montserrat grow text-sm font-normal lg:text-base">
         {feature.description}
       </p>
-      <Link
-        href={feature.href}
-        className="text-primary font-montserrat hover:text-primary/80 flex items-center gap-3 text-sm font-medium transition-colors lg:text-base"
-      >
-        More info
-        <Image
-          src={'/icons/long-right-arrow.svg'}
-          alt="Arrow"
-          width={16}
-          height={16}
-          className="w-12 lg:w-14"
-        />
-      </Link>
+      <MoreInfo href={feature.href} />
     </div>
   );
 }

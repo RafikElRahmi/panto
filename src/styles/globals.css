@@ -15,7 +15,7 @@
   /* Default theme (Orange) */
   --primary: var(--primary-orange);
 
-  --leading-paragraph: 2;
+  --leading-paragraph: 1.9;
   --font-4xxl: 2.625rem;
 }
 
