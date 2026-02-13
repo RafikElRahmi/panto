@@ -1,7 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import MoreInfo from '@/components/shared/more-info';
 import { FeatureType } from './features';
-import MoreInfo from "@/components/shared/more-info";
 
 function Feature({ feature }: { feature: FeatureType }) {
   return (

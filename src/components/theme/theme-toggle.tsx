@@ -1,44 +1,35 @@
-"use client";
+'use client';
 
-import { useTheme } from "@/context/theme-provider";
+import { useTheme } from '@/context/theme-provider';
+import { Check } from "lucide-react";
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className="flex items-center gap-2">
-      <span className="text-sm font-medium">Theme:</span>
-      <div className="flex gap-1">
+    <div className="absolute start-2/12 top-10/12 z-50 flex flex-col items-center gap-2">
+      <div className="flex h-10 items-center justify-center gap-2 rounded-full border border-white bg-white/20 px-3 backdrop-blur-xs">
         <button
-          className={`h-8 px-3 text-sm border rounded-md transition-colors ${
-            theme === "orange"
-              ? "bg-orange-500 text-white border-orange-500"
-              : "bg-white text-gray-700 border-gray-300 hover:bg-gray-50"
-          }`}
-          onClick={() => setTheme("orange")}
+          className="bg-primary-orange size-4 rounded-full"
+          onClick={() => setTheme('orange')}
         >
-          Orange
+          {theme === 'orange' && <Check size={16} className="text-white" />}
         </button>
         <button
-          className={`h-8 px-3 text-sm border rounded-md transition-colors ${
-            theme === "cyan"
-              ? "bg-cyan-500 text-white border-cyan-500"
-              : "bg-white text-gray-700 border-gray-300 hover:bg-gray-50"
-          }`}
-          onClick={() => setTheme("cyan")}
+          className="bg-primary-cyan size-4 rounded-full"
+          onClick={() => setTheme('cyan')}
         >
-          Cyan
+          {theme === 'cyan' && <Check size={16} className="text-white" />}
         </button>
         <button
-          className={`h-8 px-3 text-sm border rounded-md transition-colors ${
-            theme === "gray"
-              ? "bg-gray-500 text-white border-gray-500"
-              : "bg-white text-gray-700 border-gray-300 hover:bg-gray-50"
-          }`}
-          onClick={() => setTheme("gray")}
+          className="bg-primary-gray size-4 rounded-full"
+          onClick={() => setTheme('gray')}
         >
-          Gray
+          {theme === 'gray' && <Check size={16} className="text-white" />}
         </button>
+      </div>
+      <div className="flex size-12 items-center justify-center rounded-full border border-white bg-white/20 backdrop-blur-xs">
+        <div className="size-4 rounded-full bg-white"></div>
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
 import { cn } from '@/utils/cn';
-import Image from 'next/image';
 import Link from 'next/link';
 
 function MoreInfo({ href, className }: { href: string; className?: string }) {
@@ -12,13 +11,19 @@ function MoreInfo({ href, className }: { href: string; className?: string }) {
       )}
     >
       More info
-      <Image
-        src={'/icons/long-right-arrow.svg'}
-        alt="Arrow"
-        width={16}
-        height={16}
+      <svg
+        width="48"
+        height="24"
+        viewBox="0 0 48 24"
         className="w-12 lg:w-14"
-      />
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4.5 12.4002H42M42 12.4002C42 12.4002 37.5119 9.44867 36.6 7.00024M42 12.4002C42 12.4002 38.0324 15.1736 36.6 17.8002"
+          stroke="currentColor"
+          strokeLinecap="square"
+        />
+      </svg>
     </Link>
   );
 }
