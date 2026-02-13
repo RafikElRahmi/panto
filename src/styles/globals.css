@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
@@ -14,17 +14,20 @@
 
   /* Default theme (Orange) */
   --primary: var(--primary-orange);
+
+  --leading-paragraph: 2;
+  --font-4xxl: 2.625rem;
 }
 
-[data-theme="orange"] {
+[data-theme='orange'] {
   --primary: var(--primary-orange);
 }
 
-[data-theme="cyan"] {
+[data-theme='cyan'] {
   --primary: var(--primary-cyan);
 }
 
-[data-theme="gray"] {
+[data-theme='gray'] {
   --primary: var(--primary-gray);
 }
 
@@ -43,6 +46,8 @@
   --font-inter: var(--font-inter);
   --font-dm-sans: var(--font-dm-sans);
   --font-montserrat: var(--font-montserrat);
+  --leading-paragraph: var(--leading-paragraph);
+  --text-4xxl: var(--font-4xxl);
 }
 
 body {
