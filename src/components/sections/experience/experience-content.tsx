@@ -7,7 +7,7 @@ function ExperienceContent() {
   return (
     <div className="h-120">
       <Title>Experiences</Title>
-      <Caption>We Provide You The Best Experience</Caption>
+      <Caption id="experience-heading">We Provide You The Best Experience</Caption>
       <Paragraph>
         You don&apos;t have to worry about the result because all of these interiors are made by
         people who are professionals in their fields with an elegant and luxurious style and with

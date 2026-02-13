@@ -11,8 +11,8 @@ export interface TestimonialType {
 export const testimonials: TestimonialType[] = [
   {
     id: 1,
-    backgroundImage: '/experience.webp',
-    avatarImage: '/experience.webp',
+    backgroundImage: '/Bang-Upin-cover.jpg',
+    avatarImage: '/Bang-Upin.png',
     rating: 4,
     name: 'Bang Upin',
     role: 'Pedagang Asongan',
@@ -20,8 +20,8 @@ export const testimonials: TestimonialType[] = [
   },
   {
     id: 2,
-    backgroundImage: '/experience.webp',
-    avatarImage: '/experience.webp',
+    backgroundImage: '/Ibuk-Sukijan-cover.jpg',
+    avatarImage: '/Ibuk-Sukijan.png',
     rating: 4,
     name: 'Ibuk Sukijan',
     role: 'Ibu Rumah Tangga',
@@ -30,8 +30,8 @@ export const testimonials: TestimonialType[] = [
   },
   {
     id: 3,
-    backgroundImage: '/experience.webp',
-    avatarImage: '/experience.webp',
+    backgroundImage: '/Mpok-Ina-cover.jpg',
+    avatarImage: '/Mpok-Ina.png',
     rating: 4,
     name: 'Mpok Ina',
     role: 'Karyawan Swasta',

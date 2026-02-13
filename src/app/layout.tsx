@@ -111,12 +111,39 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FurnitureStore',
+    name: 'Panto',
+    description:
+      'Discover stylish and comfortable furniture at Panto. Shop our collection of modern chairs, beds, sofas, and lamps.',
+    url: 'http://localhost:3000',
+    image: '/open-graph-cover.png',
+    priceRange: '$$',
+    sameAs: [
+      'https://facebook.com/panto',
+      'https://twitter.com/panto',
+      'https://instagram.com/panto',
+    ],
+  };
+
   return (
     <html lang="en">
-      <head></head>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${dmSans.variable} ${montserrat.variable} antialiased`}
       >
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-black focus:shadow-lg"
+        >
+          Skip to main content
+        </a>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

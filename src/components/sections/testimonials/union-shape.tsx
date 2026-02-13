@@ -6,6 +6,8 @@ function UnionShape() {
       xmlns="http://www.w3.org/2000/svg"
       className="w-full h-70"
       preserveAspectRatio="none"
+      aria-hidden="true"
+      focusable="false"
     >
       <foreignObject x="-11" y="-11" width="356" height="261">
         <div

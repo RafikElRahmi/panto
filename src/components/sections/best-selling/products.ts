@@ -13,7 +13,7 @@ export const products: Product[] = [
     name: 'Sakarias Armchair',
     price: 392,
     rating: 3.2,
-    image: '/experience.webp',
+    image: '/Sakarias-Armchair.png',
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const products: Product[] = [
     name: 'Baltsar Chair',
     price: 299,
     rating: 5,
-    image: '/experience.webp',
+    image: '/Baltsar-Chair.png',
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ export const products: Product[] = [
     name: 'Anjay Chair',
     price: 519,
     rating: 4,
-    image: '/experience.webp',
+    image: '/Anjay-Chair.png',
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const products: Product[] = [
     name: 'Nyantuy Chair',
     price: 921,
     rating: 1.5,
-    image: '/experience.webp',
+    image: '/Nyantuy-Chair.png',
   },
 ];
 

@@ -3,10 +3,10 @@ import { features, type FeatureType } from './features';
 
 function WhyChooseUsSection() {
   return (
-    <section className="bg-white px-10 py-20 lg:py-32 lg:px-24">
+    <section className="bg-white px-10 py-20 lg:py-32 lg:px-24" aria-labelledby="why-choose-us-heading">
       <div className="grid grid-cols-1 gap-20 md:gap-10 md:grid-cols-4 items-stretch">
         <div className="md:col-span-1 self-center">
-          <h2 className="text-foreground text-4xxl leading-tight font-bold">
+          <h2 id="why-choose-us-heading" className="text-foreground text-4xxl leading-tight font-bold">
             Why
             <br /> Choosing Us
           </h2>

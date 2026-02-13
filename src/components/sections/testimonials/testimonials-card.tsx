@@ -5,14 +5,15 @@ import UnionShape from './union-shape';
 
 export function TestimonialCard({ testimonial }: { testimonial: TestimonialType }) {
   return (
-    <div className="relative w-full max-w-120 overflow-hidden rounded-4xl shadow-xl">
+    <article className="relative w-full max-w-120 overflow-hidden rounded-4xl shadow-xl" aria-label={`Review by ${testimonial.name}`}>
       <div className="relative h-160 w-full">
         <Image
           src={testimonial.backgroundImage}
-          alt="Interior background"
+          alt=""
           fill
           className="object-cover"
           priority
+          aria-hidden="true"
         />
       </div>
 
@@ -23,7 +24,7 @@ export function TestimonialCard({ testimonial }: { testimonial: TestimonialType 
           <div className="absolute inset-0 flex h-70 flex-col items-center px-8 pt-2 pb-6">
             <Image
               src={testimonial.avatarImage}
-              alt={testimonial.name}
+              alt={`Portrait of ${testimonial.name}`}
               width={64}
               height={64}
               className="h-20 w-20 rounded-full border-8 border-white object-cover"
@@ -32,9 +33,9 @@ export function TestimonialCard({ testimonial }: { testimonial: TestimonialType 
 
             <p className="text-muted mt-1 text-xs">{testimonial.role}</p>
 
-            <p className="text-muted mt-4 grow px-4 text-center text-sm">
+            <blockquote className="text-muted mt-4 grow px-4 text-center text-sm">
               {`\u201C${testimonial.quote}\u201D`}
-            </p>
+            </blockquote>
 
             <div className="flex items-center justify-center gap-1">
               <StarRate rating={testimonial.rating} />
@@ -42,6 +43,6 @@ export function TestimonialCard({ testimonial }: { testimonial: TestimonialType 
           </div>
         </div>
       </div>
-    </div>
+    </article>
   );
 }

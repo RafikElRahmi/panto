@@ -3,8 +3,8 @@ import Image from 'next/image';
 function ExperienceImageSection() {
   return (
     <div className="relative h-120 w-full overflow-hidden rounded-3xl lg:h-160 lg:rounded-none">
-      <span className="bg-background-light-gray absolute top-0 -left-2/12 hidden aspect-3/2 w-10/12 rounded-2xl lg:block" />
-      <span className="bg-background-light-gray absolute top-32 right-1/12 hidden aspect-video w-10/12 rounded-2xl lg:block" />
+      <span className="bg-background-light-gray absolute top-0 -left-2/12 hidden aspect-3/2 w-10/12 rounded-2xl lg:block" aria-hidden="true" />
+      <span className="bg-background-light-gray absolute top-32 right-1/12 hidden aspect-video w-10/12 rounded-2xl lg:block" aria-hidden="true" />
 
       <div className="absolute start-0 flex w-full items-center justify-center overflow-hidden lg:top-16 lg:w-10/12">
         <Image

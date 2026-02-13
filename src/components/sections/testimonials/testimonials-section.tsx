@@ -46,12 +46,13 @@ function TestimonialsSection() {
   return (
     <section
       id="contact"
-      className="flex flex-col items-center justify-center gap-1 px-6 py-16 md:py-28 lg:px-16"
+      className="flex flex-col items-center justify-center gap-1 py-16 md:py-28 "
+      aria-labelledby="testimonials-heading"
     >
       <Title>Testimonials</Title>
-      <Caption>Our Client Reviews</Caption>
-      <div className="relative mt-4 flex w-full flex-col items-center justify-center gap-7 md:mt-10 lg:mt-18">
-        <div className="flex w-full justify-center gap-4 sm:gap-6 lg:gap-8">
+      <Caption id="testimonials-heading">Our Client Reviews</Caption>
+      <div className="relative mt-4 flex w-full flex-col items-center justify-center gap-7 md:mt-10 lg:mt-18" role="region" aria-label="Client testimonials carousel" aria-roledescription="carousel">
+        <div className="flex w-full justify-center gap-4 sm:gap-6 lg:gap-8" aria-live="polite">
           {testimonials.slice(currentIndex, currentIndex + visibleCards).map(testimonial => (
             <TestimonialCard testimonial={testimonial} key={testimonial.id} />
           ))}

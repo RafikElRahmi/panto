@@ -13,17 +13,21 @@ function NavigationButtons({ onPrev, onNext, canGoPrev, canGoNext }: NavigationB
       <button
         onClick={onPrev}
         disabled={!canGoPrev}
-        className="absolute top-1/2 left-0 z-10 flex h-14 w-14 -translate-x-6 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg transition"
+        type="button"
+        aria-label="Previous"
+        className="bg-background absolute top-1/2 left-0 z-10 flex h-14 w-14 -translate-x-6 -translate-y-1/2 items-center justify-center rounded-full shadow-lg transition disabled:opacity-40"
       >
-        <ChevronLeft className="text-foreground h-6 w-6" />
+        <ChevronLeft className="text-foreground h-6 w-6" aria-hidden="true" />
       </button>
 
       <button
         onClick={onNext}
         disabled={!canGoNext}
-        className="absolute top-1/2 right-0 z-10 flex h-14 w-14 translate-x-6 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg transition"
+        type="button"
+        aria-label="Next"
+        className="bg-background absolute top-1/2 right-0 z-10 flex h-14 w-14 translate-x-6 -translate-y-1/2 items-center justify-center rounded-full shadow-lg transition disabled:opacity-40"
       >
-        <ChevronRight className="text-foreground h-6 w-6" />
+        <ChevronRight className="text-foreground h-6 w-6" aria-hidden="true" />
       </button>
     </>
   );
